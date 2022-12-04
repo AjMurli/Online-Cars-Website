@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/CSS/online_cars_website.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bree+Serif&family=Orelega+One&family=PT+Serif:ital,wght@1,700&family=Roboto+Slab:wght@600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Bree+Serif&family=Libre+Baskerville:wght@700&family=Orelega+One&family=PT+Serif:ital,wght@1,700&family=Roboto+Slab:wght@600&family=Signika+Negative:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48a00b8081.js" crossorigin="anonymous"></script>
+
+    <title>Online Cars</title>
+    <style>
+        @media screen and (max-width: 1000px) {
+            nav img {
+                width: 6rem;
+                height: 6rem;
+            }
+
+            .search input {
+                font-size: 4vw;
+            }
+
+            .search {
+                position: absolute;
+                top: 17%;
+                left: 93%;
+            }
+
+            nav ul {
+                margin-left: 35rem;
+            }
+
+            nav li a {
+                font-size: 6vw;
+            }
+
+            .brands {
+                /* width: 49rem; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .container2 {
+                width: 90rem;
+            }
+
+
+            .brands img {
+                width: 100%;
+                height: 19rem;
+            }
+
+            .container2 tr {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container1 a {
+                font-size: 7vw;
+            }
+
+            .container {
+                width: 99rem;
+                height: 119vh;
+            }
+
+            .container1 p {
+                margin-top: 10px;
+                width: 60rem;
+                font-size: 6vw;
+            }
+
+            .container3 table {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container3 {
+                width: 90rem;
+
+            }
+
+
+            .container3 tbody {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container3 td {
+                width: 36rem;
+            }
+
+            .container3 .Searches-car {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container4 h2 {
+                font-size: 15vw;
+            }
+
+            .container4 {
+                width: 90rem;
+            }
+
+            .container5 {
+                width: 90rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .container4 .Searches-car {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container4 tbody {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Searches-car td {
+                width: 36rem;
+            }
+
+            .container5 .carsvs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .container5 .cars1 {
+                display: flex;
+            }
+
+            nav {
+                width: 0;
+            }
+
+            .share-menu {
+                display: none;
+            }
+
+            .container .img {
+                margin-right: 3rem;
+            }
+
+            .container2 h2 {
+                font-size: 15vw;
+            }
+
+            .brands a {
+                font-size: 15vw;
+            }
+
+            .Searches-car p {
+                font-size: 7vw;
+            }
+
+            .brands h4 {
+                font-size: 15vw;
+            }
+
+            .Searches-car a {
+                font-size: 15vw;
+
+            }
+
+            .container3 h2 {
+                font-size: 15vw;
+            }
+
+            .Searches-car button {
+                font-size: 10vw;
+            }
+
+            .Searches-car img {
+                width: 42rem;
+                height: 28rem;
+            }
+
+            .Searches-car .launched {
+                font-size: 6vw;
+            }
+
+            .Searches-car span {
+                font-size: 8vw;
+
+            }
+
+            .container5 h2 {
+                font-size: 15vw;
+            }
+
+            .blur {
+                font-size: 12vw;
+            }
+
+            .carname {
+                font-size: 11vw;
+            }
+
+            .price {
+                font-size: 8vw;
+            }
+
+            .cars1 button {
+                font-size: 9vw;
+            }
+
+            .buttons {
+                position: relative;
+            }
+
+            .cars1 .vs1 {
+                display: none;
+            }
+
+            .cars1 .vs3 {
+                display: none;
+            }
+
+            .image img {
+                width: 40rem;
+                height: 30rem;
+            }
+
+            .container5 .cars1 {
+                width: 80rem;
+            }
+
+            .container5 h4 {
+                font-size: 15vw;
+
+            }
+
+            .container6 {
+                width: 90rem;
+                height: 64rem;
+            }
+
+            .container6 h2 {
+                font-size: 15vw;
+            }
+
+            .city .used {
+                font-size: 6vw;
+            }
+
+            .city .area {
+                font-size: 8vw;
+            }
+
+            .container6 .secondHand {
+                display: none;
+            }
+
+            .container7 h2 {
+                font-size: 15vw;
+            }
+
+            .city ul {
+                display: flex;
+                width: 45rem;
+            }
+
+            .container7 a {
+                font-size: 14vw;
+            }
+
+            .container7 {
+                width: 90rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+            }
+
+            .container7 .information .box1c a {
+                font-size: 9vw;
+            }
+
+            .container7 .information .box1Design span {
+                font-size: 6vw;
+            }
+
+            .container7 .information {
+                flex-wrap: wrap;
+            }
+
+            .name td {
+                font-size: 8vw;
+            }
+
+            .date td {
+                font-size: 7vw;
+            }
+
+            .container7 .information .box1c table .logo td {
+                font-size: 9vw;
+                width: 27vw;
+            }
+
+            .container8 {
+                width: 90rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .container8 h2 {
+                font-size: 15vw;
+            }
+
+            .container8 a {
+                font-size: 12vw;
+
+            }
+
+            .container8 .box1c a {
+                font-size: 9vw;
+            }
+
+            .container8 .box1c span {
+                font-size: 6vw;
+            }
+
+            .info-cars {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cars1 .vs2 {
+                width: 3rem;
+                height: 3rem;
+                line-height: 3rem;
+                font-size: 5vw;
+                left: 46.5%;
+                top: 30%;
+            }
+
+            .container9 {
+                width: 99rem;
+            }
+
+            .text span {
+                font-size: 6vw;
+            }
+
+            .container9 .ranks {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .container8 .box1c table .logo td {
+                width: 5rem;
+                height: 5rem;
+                line-height: 5rem;
+                font-size: 8vw;
+            }
+
+
+            .ranks {
+                gap: 3rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .container9 .moreInfo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rank img {
+                width: 44vw;
+            }
+
+            .container9 .moreInfo .title {
+                font-size: 12vw;
+            }
+
+
+            .moreInfo span {
+                padding-right: 1rem;
+            }
+
+            .overviewDetails,
+            .otherDetails {
+                font-size: 12vw;
+
+            }
+
+            .footerInfo .overviewDetails li a {
+                font-size: 10vw;
+            }
+
+            .footerInfo .otherDetails li a {
+                font-size: 8vw;
+            }
+
+            .footerInfo .otherDetails .apps {
+                flex-direction: column;
+                display: flex;
+            }
+
+            .footerInfo .shareApps i {
+                font-size: 13vw;
+            }
+
+            .footer .title {
+                font-size: 14vw;
+            }
+
+            .footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logos img {
+                width: 18rem;
+            }
+
+            .container9 .moreInfo p {
+                font-size: 0vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="img">
+                <img src="/IMG/mercedes.png" alt="">
+            </div>
+
+            <ul>
+                <li><a class="link-hover" href="">Cars</a> </li>
+                <li><a class="link-hover" href="">History</a> </li>
+                <li><a class="link-hover" href="">Technology</a> </li>
+                <li><a class="link-hover" href=""> Production</a> </li>
+                <li> <a class="link-hover" href="">Reviews</a> </li>
+                <li> <a class="link-hover" href="">Privacy</a> </li>
+            </ul>
+
+            <div class="share-menu">
+                <a href=""><i class="fa-brands fa-google"></i></a>
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="search">
+        <form action="" class="example">
+            <input type="text" placeholder="SEARCH SOMETHING...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+
+
+    <div class="container1">
+        <h1>Keep your vehicles looks good</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi atque veritatis mollitia vero, aspernatur
+            porro.lorem5 Autem quae neque officiis dolor voluptatem eos deserunt minus dolore quaerat optio ad, fugit
+            nam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, ullam
+        </p>
+        <button type="button"><a href=""><i class="fa-solid fa-circle-play"> </i>Learn More</a></button>
+    </div>
+    <section>
+        <div class="container2">
+            <div class="brands">
+                <h2>Popular Brands</h2>
+                <table>
+                    <tr>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/maruti.jpg"
+                                    alt=""></a> </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/hyundai.jpg"
+                                    alt=""></a> </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mahindra.jpg"
+                                    alt=""></a> </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mercedes-benz.jpg"
+                                    alt=""></a> </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/tata.jpg"
+                                    alt=""></a> </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/honda.jpg"
+                                    alt=""></a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/renault.jpg"
+                                    alt=""></a> </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/toyota.jpg"
+                                    alt=""></a> </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mg.jpg" alt=""></a>
+                        </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/nissan.jpg"
+                                    alt=""></a> </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/datsun.jpg" alt="">
+                        </td>
+                        <td><a href=""><img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/kia.jpg"
+                                    alt=""></a> </td>
+                    </tr>
+                </table>
+
+                <div class="line1"></div>
+                <h4><a href="">View All Brands</a> </h4>
+            </div>
+
+        </div>
+
+        <div class="container8">
+            <h2>Know more to choose better</h2>
+            <div class="contents-info">
+                <div class="info-cars">
+
+                    <div class="box1">
+                        <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/816x544/20220524_134430/29118/kia0.jpg"
+                            alt="">
+                        <div class="box1c">
+                            <a href="">Kia EV6 GT Line: First Drive Review</a>
+                            <span>Flagship EV + full import might be an expensive proposition, but the EV6 also packs
+                            </span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 13, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="https://stimg2.cardekho.com/images/roadTestimages/816x544/20220517_011213/775/tata0.jpg"
+                            alt="">
+                        <div class="box1c">
+                            <a href="">Kia EV6 GT Line: First Drive Review</a>
+                            <span>Flagship EV + full import might be an expensive proposition, but the EV6 also packs
+                            </span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 13, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/816x544/20220526_152659/29130/kia0.jpg"
+                            alt="">
+                        <div class="box1c">
+                            <a href="">Kia EV6 GT Line: First Drive Review</a>
+                            <span>Flagship EV + full import might be an expensive proposition, but the EV6 also packs
+                            </span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 13, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="https://stimg2.cardekho.com/images/roadTestimages/816x544/20220510_110940/772/mercedes-benz0.jpg"
+                            alt="">
+                        <div class="box1c">
+                            <a href="">Kia EV6 GT Line: First Drive Review</a>
+                            <span>Flagship EV + full import might be an expensive proposition, but the EV6 also packs
+                            </span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 13, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="line4"></div>
+            <h4><a href="">View All Experts Reviews</a> </h4>
+        </div>
+        <!-- Know more to choose better section end -->
+
+        <!-- news on cars that you like section start -->
+        <div class="container7">
+            <h2>News on cars that you like</h2>
+            <div class="contents">
+                <div class="information">
+
+                    <div class="box1 box1Design">
+                        <a href="">
+                            <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/816x544/20220520_120402/29097/jeep0.jpg"
+                                alt="""></a>
+                        <div class=" box1c"> <a href="">Skoda Is Downsizing Touchscreens In Kushaq & Slavia</a>
+                            <span>The Skoda models will see their 10-inch central displays replaced with 8-inch
+                                alternatives</span>
+
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 25, 2022</td>
+                                </tr>
+                            </table>
+
+                    </div>
+                </div>
+
+                <div class="box1 box1Design">
+                    <div class=" box1">
+                        <a href="">
+                            <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/816x544/20220506_134908/29031/renault0.jpg"
+                                alt=""></a>
+                        <div class="box1c">
+                            <a href="">Want To Jump The Line? Select Citroen Dealers Will Accept Yo...</a>
+                            <span>The India-spec C3 will be revealed in June with a launch expected soon
+                                after</span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">R</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Rohan</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 20, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- new on cars that you like section end -->
+
+        <!-- News Section -->
+
+        <div class="contents">
+            <div class="information">
+
+                <div class="box1 box1Design">
+                    <a href="">
+                        <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/816x544/20220524_134430/29118/kia0.jpg"
+                            alt=""></a>
+                    <div class=" box1c">
+                        <a href="">Skoda Is Downsizing Touchscreens In Kushaq & Slavia</a>
+                        <span>The Skoda models will see their 10-inch central displays replaced with 8-inch
+                            alternatives</span>
+                        <table>
+                            <tr class="logo">
+                                <td rowspan="3">A</td>
+                            </tr>
+                            <tr class="name">
+                                <td>Akshay</td>
+                            </tr>
+                            <tr class="date">
+                                <td>May 10, 2022</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="box1 box1Design">
+                    <div class=" box1">
+                        <a href="">
+                            <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/816x544/20220516_170240/29078/renault0.jpg"
+                                alt=""></a>
+                        <div class="box1c">
+                            <a href="">Want To Jump The Line? Select Citroen Dealers Will Accept Yo...</a>
+                            <span>The India-spec C3 will be revealed in June with a launch expected soon
+                                after</span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">D</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Dhoni</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 1, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="line4"></div>
+        <h4><a href="">View All Latest News</a> </h4>
+        </div>
+        </div>
+
+
+        <div class="container5">
+            <h2>Compare to buy the right car</h2>
+            <div class="compare">
+                <ul>
+
+                    <div class="carsvs">
+
+                        <div class="cars1">
+                            <li>
+                                <div class="vs1">VS</div>
+
+                                <div class="image">
+                                    <a href=""><img
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Swift/8378/1644834798148/front-left-side-47.jpg?imwidth=380&impolicy=resize"
+                                            alt=""></a>
+                                    <div class="details1">
+                                        <span class="blur">Maruti</span>
+                                        <span class="carname">Swift</span>
+                                        <span class="price">Rs 5.92 - 8.85 Lakh *</span>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button>Maruti Swift vs Maruti Baleno</button>
+                                </div>
+                            </li>
+
+                            <li class="carsvs1">
+                                <div class="image">
+                                    <a href=""><img
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Baleno/8674/1645684614616/front-left-side-47.jpg?imwidth=380&impolicy=resize"
+                                            alt=""></a>
+                                    <div class="details1">
+                                        <span class="blur">Maruti</span>
+                                        <span class="carname">Baleno</span>
+                                        <span class="price"> Rs 6.49 - 9.71 Lakh *</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="gap"> </div>
+
+                        <div class="cars1">
+                            <li>
+                                <div class="vs2">VS</div>
+                                <div class="image">
+                                    <a href=""><img
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Swift/8378/1644834798148/front-left-side-47.jpg?imwidth=380&impolicy=resize"
+                                            alt=""></a>
+                                    <div class="details1">
+                                        <span class="blur">Maruti</span>
+                                        <span class="carname">Baleno</span>
+                                        <span class="price">Rs 5.92 - 8.85 Lakh *</span>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button>Maruti Swift vs Maruti Baleno</button>
+                                </div>
+                            </li>
+
+                            <li class="carsvs1">
+                                <div class="image">
+                                    <a href=""><img
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Punch/7513/1633329515070/front-left-side-47.jpg?imwidth=380&impolicy=resize"
+                                            alt=""></a>
+                                    <div class="details1">
+                                        <span class="blur">Tata</span>
+                                        <span class="carname">Altroz</span>
+                                        <span class="price"> Rs 6.49 - 9.71 Lakh *</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="gap"> </div>
+
+                        <div class="cars1">
+                            <li>
+                                <div class="vs3">VS</div>
+                                <div class="image">
+                                    <a href=""><img
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Jeep/Jeep-Renegade/5556/1551074202602/front-left-side-47.jpg?tr=w-456"
+                                            alt=""></a>
+                                    <div class="details1">
+                                        <span class="blur">Jeep</span>
+                                        <span class="carname">Meridian</span>
+                                        <span class="price">Rs 5.92 - 8.85 Lakh *</span>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button>Maruti Swift vs Maruti Baleno</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="image">
+                                    <a href=""><img
+                                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Isuzu/MU-X/6487/1620640668142/front-left-side-47.jpg?imwidth=380&impolicy=resize"
+                                            alt=""></a>
+                                    <div class="details1">
+                                        <span class="blur">Isuzu</span>
+                                        <span class="carname">MU-X</span>
+                                        <span class="price"> Rs 6.49 - 9.71 Lakh *</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </div>
+                    </div>
+
+
+                </ul>
+            </div>
+            <div class="line3"></div>
+            <h4><a href="">View All Car Comparison</a> </h4>
+        </div>
+        <!-- The most searched cars start -->
+        <div class="container3">
+            <div class="Searches-car">
+                <h2>The most searched cars </h2>
+
+                <table>
+                    <tr>
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Renault KWID</p>
+                            <p>₨ 4.50 - 5.83 Lakh*</p>
+                            <button type="button">View All Offers</button>
+                        </td>
+                        <td class="gap0"></td>
+
+                        <td>
+                            <a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Alto-800/7072/1650542631570/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Maruti Swift</p>
+                            <p>₨ 5.92 - 8.85 Lakh*</p>
+                            <button type="button">Check May Offers</button>
+                        </td>
+                        <td class="gap0"></td>
+
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/S-Presso/7176/1650543832076/front-left-side-47.jpg"
+                                    alt=""></a>
+                            <p>Maruti Baleno </p>
+                            <p>₨ 6.49 - 9.71 Lakh*</p>
+                            <button type="button">Check May Offers</button>
+                        </td>
+                        <td class="gap0"></td>
+
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Datsun/RediGO/7797/1591769422732/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Hyundai i20</p>
+                            <p> ₨ .03 - 11.54 Lakh*</p>
+                            <button type="button">Check May Offers</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="line2"></div>
+                <h4><a href="">View All Hatchback Cars</a> </h4>
+            </div>
+        </div>
+        <!-- The most searched cars end -->
+
+
+        <div class="container3">
+            <div class="Searches-car">
+                <h2>Latest cars </h2>
+
+                <table>
+                    <tr>
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Swift/8378/1644834798148/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Honda City Hybrid</p>
+                            <p>Rs 19.50 Lakh*</p>
+                            <button type="button">View Offers</button>
+                        </td>
+                        <td class="gap0"></td>
+
+
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Land-Rover/Range-Rover-Sport/9115/1653022703223/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Land Rover Range Rover Sport </p>
+                            <p> Rs1.64 - 1.84 Cr*</p>
+                            <button type="button">View Offers</button>
+                        </td>
+
+                        <td class="gap0"></td>
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Jeep/Meridian/9118/1653026725680/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Porsche 718</p>
+                            <p>Rs1.26 - 2.54 Cr*</p>
+                            <button type="button">View Offers</button>
+                        </td>
+                        <td class="gap0"></td>
+
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Porsche/718/5632/1581578133187/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Jeep Meridian</p>
+                            <p> Rs29.90 - 36.95 Lakh*</p>
+                            <button type="button">View Offers</button>
+                        </td>
+
+                    </tr>
+                </table>
+                <div class="line2"></div>
+                <h4><a href="">View All Latest Cars</a> </h4>
+            </div>
+        </div>
+
+
+        <div class="container4">
+            <div class="Searches-car Searches-car1">
+                <h2>UpComing cars </h2>
+
+                <table>
+                    <tr>
+
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Land-Cruiser/8448/1623313668941/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Toyota Land Cruiser</p>
+                            <p> Rs 1.50 Cr <span>Estimated Price</span></p>
+                            <span class="launched">Mar 02, 2023 Expected Launch</span>
+                            <button type="button">Alert Me When Launched</button>
+                        </td>
+                        <td class="gap0"></td>
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Nexo/7255/1580972415014/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Hyundai Nexo</p>
+                            <p> Rs 65.00 Lakh <span>Estimated Price</span></p>
+                            <span class="launched">Mar 15, 2023 Expected Launch</span>
+                            <button type="button">Alert Me When Launched</button>
+                        </td>
+                        <td class="gap0"></td>
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Volkswagen/Virtus/6120/1646726714226/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Volkswagen Virtus</p>
+                            <p>Rs 11.50 Lakh <span>Estimated Price</span></p>
+                            <span class="launched">Jun 09, 2022 Expected Launch</span>
+                            <button type="button">Alert Me When Launched</button>
+                        </td>
+                        <td class="gap0"></td>
+                        <td><a href=""><img
+                                    src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Kia/EV6/8947/1649393987044/front-left-side-47.jpg?tr=w-456"
+                                    alt=""></a>
+                            <p>Kia EV6</p>
+                            <p>Rs 65.00 Lakh <span>Estimated Price</span></p>
+                            <span class="launched">Jun 15, 2022 Expected Launch</span>
+                            <button type="button">Alert Me When Launched</button>
+                        </td>
+
+                    </tr>
+                </table>
+                <div class="line2"></div>
+                <h4><a href="">View All UpComing Cars</a> </h4>
+            </div>
+        </div>
+
+
+
+
+        <div class="container6">
+            <h2>Get Trusted used cars nearby</h2>
+            <div class="city">
+                <ul>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/ahmedabad.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Ahmedabad</p>
+                        </a>
+                    </li>
+
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/bangalore.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Bangalore</p>
+                        </a>
+                    </li>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/chennai.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Chennai</p>
+                        </a>
+                    </li>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/new-delhi.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">New Delhi</p>
+                        </a>
+                    </li>
+
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/gurgaon.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Gurgaon</p>
+                        </a>
+                    </li>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/hyderabad.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Hyderabad</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/jaipur.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Jaipur</p>
+                        </a>
+                    </li>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/kolkata.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Kolkata</p>
+                        </a>
+                    </li>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/mumbai.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Mumbai</p>
+                        </a>
+                    </li>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/delhi-ncr.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Delhi NCR</p>
+                        </a>
+                    </li>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/noida.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Noida</p>
+                        </a>
+                    </li>
+                    <li> <a href=""><img src="https://stimg.cardekho.com/pwa/img/IconCityNew/pune.svg" alt="">
+                            <p class="used">Used cars in</p>
+                            <p class="area">Pune</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="secondHand">
+                <h3> I am Looking to buy a second hand car in</h3>
+                <form action="">
+                    <i class="fa-solid firstIcon fa-location-dot" style="color:rgba(36, 39, 44, .5);"></i>
+                    <input type="text" placeholder="Enter your city">
+
+                    <i class="fa-solid secondIcon fa-caret-down" style="color:rgba(36, 39, 44, .5);"">
+                        <div class=" dropdown-content">
+                        <a href="">Mumbai</a>
+                        <a href="">Pune</a>
+                        <a href="">Goa</a>
+                        <a href="">Kolkata</a>
+                        <a href="">Chennai</a>
+            </div>
+            </i>
+            </form>
+        </div>
+        </div>
+
+
+        <!-- Know more to choose better section start -->
+
+        <!-- <div class="container8">
+            <h2>Know more to choose better</h2>
+            <div class="contents-info">
+                <div class="info-cars">
+
+                    <div class="box1">
+                        <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/816x544/20220524_134430/29118/kia0.jpg"
+                            alt="">
+                        <div class="box1c">
+                            <a href="">Kia EV6 GT Line: First Drive Review</a>
+                            <span>Flagship EV + full import might be an expensive proposition, but the EV6 also packs
+                            </span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 13, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="https://stimg2.cardekho.com/images/roadTestimages/816x544/20220517_011213/775/tata0.jpg"
+                            alt="">
+                        <div class="box1c">
+                            <a href="">Kia EV6 GT Line: First Drive Review</a>
+                            <span>Flagship EV + full import might be an expensive proposition, but the EV6 also packs
+                            </span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 13, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/816x544/20220526_152659/29130/kia0.jpg"
+                            alt="">
+                        <div class="box1c">
+                            <a href="">Kia EV6 GT Line: First Drive Review</a>
+                            <span>Flagship EV + full import might be an expensive proposition, but the EV6 also packs
+                            </span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 13, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <img src="https://stimg2.cardekho.com/images/roadTestimages/816x544/20220510_110940/772/mercedes-benz0.jpg"
+                            alt="">
+                        <div class="box1c">
+                            <a href="">Kia EV6 GT Line: First Drive Review</a>
+                            <span>Flagship EV + full import might be an expensive proposition, but the EV6 also packs
+                            </span>
+                            <table>
+                                <tr class="logo">
+                                    <td rowspan="3">M</td>
+                                </tr>
+                                <tr class="name">
+                                    <td>Murli</td>
+                                </tr>
+                                <tr class="date">
+                                    <td>May 13, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="line4"></div>
+            <h4><a href="">View All Experts Reviews</a> </h4>
+        </div>
+        Know more to choose better section end -->
+
+        <div class="text">
+            <span>*Ex-showroom price in New Mumbai</span>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container9">
+
+            <div class="ranks">
+                <div class="moreInfo">
+                    <span class="rank"><img src="/IMG/military-rank1 (1).png" alt=""></span>
+                    <div class="info">
+                        <div class="title">India's #1 </div>
+                        <p> Largest Auto portal</p>
+                    </div>
+                </div>
+                <div class="moreInfo">
+                    <span class="rank"><img src="/IMG/protection.png" alt=""></span>
+                    <div class="info">
+                        <div class="title">Car Sold </div>
+                        <p>Every 4 minute</p>
+                    </div>
+                </div>
+                <div class="moreInfo">
+                    <span class="rank"><img src="/IMG/price-tag.png" alt=""></span>
+                    <div class="info">
+                        <div class="title">Offers </div>
+                        <p>Stay updated pay less</p>
+                    </div>
+                </div>
+                <div class="moreInfo">
+                    <span class="rank"><img src="/IMG/compare.png" alt=""></span>
+                    <div class="info">
+                        <div class="title">Compare </div>
+                        <p>Decode the right car</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line5"></div>
+
+            <div class="footerInfo">
+                <div class="content">
+
+                    <div class="overviewDetails">
+                        <div class="title">Overview</div>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Corporate Policies</a></li>
+                            <li><a href="">Annual Report</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="otherDetails">
+                        <div class="title">Others</div>
+                        <ul>
+                            <li><a href="">Advertise with Us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Customer Care</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="otherDetails">
+                        <div class="title">Connect With Us</div>
+                        <ul>
+                            <li><a href="">1800 200 3000 (Toll-Free)</a></li>
+                            <li><a href="">support@onlinecars.com</a></li>
+                            <li><a href="">Dealer solutions</a></li>
+                            <li><a href="">Used Cars Business</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Feedback</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="otherDetails">
+                        <div class="title">Experience With our App</div>
+                        <ul class="apps">
+                            <li><a href=""><img src="/IMG//appstore.png" alt=""></a></li>
+                            <li><a href=""><img src="/IMG//playstore.png" alt=""></a></li>
+                        </ul>
+
+                        <div class="title">Follow Us</div>
+                        <ul class="shareApps">
+                            <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="line5"></div>
+
+            <div class="footer">
+                <div class="title">&copy; 2022 Murli Software Pvt Ltd. </div>
+                <div class="logos">
+                    <ul>
+                        <li><a href=""><img src="https://stimg.cardekho.com/pwa/img//zigwheels.png" alt=""></a></li>
+                        <li><a href=""><img src="https://stimg.cardekho.com/pwa/img//bikedekho.png" alt=""></a></li>
+                        <li><a href=""><img src="https://stimg.cardekho.com/pwa/img//zigwheels.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
